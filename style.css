@@ -1,0 +1,59 @@
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 20px;
+  background: #333;
+  padding: 10px;
+  list-style: none;
+}
+.nav li a {
+  color: white;
+  text-decoration: none;
+}
+.nav li a:hover {
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+
+/* Image styling */
+.styled-img,
+.image-grid img {
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Grid layout */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* nth-child example */
+.image-grid img:nth-child(odd) {
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
